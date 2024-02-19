@@ -52,7 +52,7 @@ public class User {
     @Column(name = "last_name", nullable = false)
     private String lastName;
 
-    @Column(name = "email_address", nullable = false)
+    @Column(name = "email_address", nullable = false, unique = true)
     private String email;
 
     @CreationTimestamp
